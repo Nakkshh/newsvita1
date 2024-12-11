@@ -1,0 +1,55 @@
+/* src/components/Hero.css */
+.hero {
+    background-size: cover;
+    background-position: center;
+    padding: 160px 20px;
+    color: white;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    animation: PiyushAnimate 20s infinite cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@keyframes PiyushAnimate {
+    0% {
+        background-image: url('https://vitbhopal.ac.in/icdcc2024/images/VITB-Background.jpeg');
+    }
+    25% {
+        background-image: url('https://vitbhopal.ac.in/wp-content/uploads/2020/02/Brochure-Front-Cover-Image11.jpg');
+    }
+    50% {
+        background-image: url('https://icsdp.com/img/photo/2nd.jpg');
+    }
+    75% {
+        background-image: url('https://vitbhopal.ac.in/wp-content/uploads/2023/05/DSW1-scaled.jpg');
+    }
+    100% {
+        background-image: url('https://images.shiksha.com/mediadata/images/1709805273phpdO15C2.jpeg');
+    }
+}
+
+.hero h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    background-color: #ffc107;
+    color: #0c4b85;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #0c4b85;
+    color: white;
+    transform: translateY(-5px);
+}

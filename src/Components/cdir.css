@@ -1,0 +1,203 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: white;
+overflow-x: hidden;
+}
+
+.slide-container {
+width: 100%;
+padding: 40px;
+}
+
+.Myswiper {
+width: 100%; /* Ensure Swiper spans the full width of the container */ /* Add spacing above and below */
+}
+    
+.club-directory-container {
+width: 100%;
+height: 100vh; /* Ensures the container takes full viewport height */
+margin: 0 20px 0 0 ; /* Center the container horizontally */
+display: flex; /* Enable flexbox */
+justify-content: center; /* Center items horizontally */
+align-items: center; /* Center items vertically */
+}
+  
+
+.card {
+width: 260px; /* Adjust the width as per your design */
+height: 460px; /* Adjust the height to fit your content */
+overflow: hidden; /* Ensures content stays within the card */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border-radius: 25px;
+background-color: #0c4b85;
+}
+
+.image-content,
+.card-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 10px 14px;
+}
+
+.card-image {
+position: relative;
+height: 150px;
+width: 150px;
+background-color: #45a29e;
+border-radius: 74px;
+padding: 3px;
+}
+
+.card-image .card-img {
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 74px;
+border: 4px solid #45a29e;
+}
+
+.button {
+border: none;
+border-radius: 20px;
+font-size: 16px;
+color: black;
+padding: 8px 16px;
+background-color: white;
+margin: 14px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.button:hover {
+background-color: #0b0c10;
+color: white;
+}
+
+.swiper {
+position: relative;
+z-index: 1;
+}
+.name {
+color: yellow;
+white-space: nowrap; /* Prevents text from wrapping */
+overflow: hidden;     /* Ensures text doesn't overflow the container */
+text-overflow: ellipsis;
+font-size: 40px;
+font-weight: 500;
+text-align: center;
+}
+
+.description {
+font-size: 20px;
+color: white;
+text-align: center;
+margin-top: 10px;
+line-height: 1.1;
+}
+
+.image-content {
+position: relative;
+padding: 25px;
+}
+
+.overlay {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+border-radius: 25px 25px 0 0;
+}
+
+.popup-box {
+position: fixed;
+height: 100%;
+width: 100%;
+left: 0;
+top: 0;
+background-color: rgba(0, 0, 0, 0.7);
+display: none;
+align-items: center;
+justify-content: center;
+z-index: 1000;
+}
+
+.popup-box .popup-content {
+background-color: #c5c6c7;
+border-radius: 10px;
+padding: 20px;
+max-width: 600px;
+width: 90%;
+max-height: 90vh;
+overflow-y: auto;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.popup-box .popup-header {
+font-size: 40px;
+text-align: center;
+text-decoration: underline;
+padding: 15px;
+}
+
+.popup-image {
+width: 520px; /* Make the image responsive */
+height: 250px; /* Maintain aspect ratio */
+border-radius: 10px; /* Add a slight border radius */
+margin-top: 20px; /* Add space above the image */
+object-fit: cover; /* Maintain aspect ratio */
+}
+
+.popup-box .popup-body {
+display: flex; /* Use flexbox for alignment */
+flex-direction: column; /* Stack items vertically */
+align-items: center; /* Center items horizontally */
+justify-content: center; /* Center items vertically */
+padding: 15px;
+}
+
+.popup-box .popup-body p {
+margin: 0;
+width: 100%;
+text-align: justify;
+}
+
+.popup-box .popup-footer {
+display: flex;
+justify-content: flex-end;
+padding: 15px;
+}
+
+.popup-close-btn {
+text-align: center;
+background-color: #0b0c10; /* Button color */
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 15px;
+cursor: pointer;
+}
+
+.popup-close-btn:hover {
+background-color: white; /* Change on hover */
+color: black;
+}
+

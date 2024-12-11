@@ -1,0 +1,31 @@
+/* src/components/Header.css */
+header {
+    background-color: #0c4b85;
+    color: white;
+    padding: 50px 0; /* Increased vertical padding to accommodate larger text */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 90px; /* Increased font size */
+    font-weight: 600;
+    margin-bottom: 30px; /* Adjusted margin for spacing */
+    animation: fadeInDown 1.5s ease-out;
+}
+
+header p {
+    font-size: 50px; /* Increased font size */
+    margin-bottom: 30px; /* Adjusted margin for spacing */
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
